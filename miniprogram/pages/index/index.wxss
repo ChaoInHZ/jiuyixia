@@ -28,11 +28,11 @@
   box-shadow: 0px 0px 10px #fff;
 }
 .ctrl-container {
-  margin: 20rpx 20rpx;
+  margin: 20rpx 20rpx 40rpx;
   border-bottom: 1rpx solid #bacac6;
 }
 .ctrl-tab {
-  padding: 20rpx 30rpx;
+  padding: 20rpx;
   -webkit-box-flex: 3;
   -webkit-flex: 3;
   flex: 3;
@@ -49,7 +49,7 @@
 }
 .picker-val {
   margin-top: 14rpx;
-  padding: 6rpx 30rpx;
+  padding: 6rpx 20rpx;
   box-sizing: border-box;
   position: relative;
   text-align: center;
@@ -66,6 +66,9 @@
   height: 30rpx;
   position: relative;
   top: 4rpx;
+}
+.product-list {
+  margin-bottom: 25rpx;
 }
 .product-item {
   width: 50%;
@@ -92,6 +95,9 @@
   border-radius: 16rpx;
 }
 .countdown {
+  display: block;
+  line-height: 1.2;
+  white-space: nowrap;
   background-color: #333;
   position: absolute;
   bottom: 0;
@@ -107,6 +113,7 @@
   display: block;
   color: #fff;
   text-align: center;
+  z-index: 10;
 }
 .countdown text.label {
   font-size: 28rpx;

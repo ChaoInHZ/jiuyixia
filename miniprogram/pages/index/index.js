@@ -14,6 +14,9 @@ Page({
   onLoad: function() {
 
   },
+  onShareAppMessage: function () {
+
+  },
   scrollBanner: function(){
     var index = parseInt(this.data.activeBanner.substr(6));
     console.log("index" + index);

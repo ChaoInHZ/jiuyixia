@@ -45,10 +45,10 @@
         <view class="product-item" wx:for="{{productNum}}" wx:key="*this">
           <view class="visual">
             <image src="/images/product-placeholder.jpg"></image>
-            <cover-view class="countdown">
+            <view class="countdown">
               <text class="label">距离下一次降价还剩：</text>
               <text>03: 03: 00</text>
-            </cover-view>
+            </view>
           </view>
           <view class="info">
             <view class="title">
@@ -70,5 +70,29 @@
         </view>
       </view>
     </view>
+
+
+		<view class="weui-tab bottom-nav-bar">
+			<view class="weui-tab__panel">
+			</view>
+			<view class="weui-tabbar">
+				<view class="weui-tabbar__item weui-bar__item_on">
+					<image src="/images/shopping-active.svg" alt class="weui-tabbar__icon"></image>
+          <navigator class="weui-tabbar__label" url="">商城</navigator>
+				</view>
+				<view class="weui-tabbar__item">
+					<image src="/images/publish.svg"></image>
+					<view class="weui-tabbar__label">发布</view>
+				</view>
+				<view class="weui-tabbar__item">
+					<image src="/images/order.svg"></image>
+					<view class="weui-tabbar__label">订单</view>
+				</view>
+				<view class="weui-tabbar__item">
+					<image src="/images/person.svg"></image>
+					<view class="weui-tabbar__label">我的</view>
+				</view>
+			</view>
+		</view>
   </view>
 </view>
