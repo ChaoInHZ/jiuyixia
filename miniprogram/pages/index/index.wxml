@@ -1,0 +1,74 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section-full-width">
+      <view class="page-section-spacing top-banner-container">
+
+        <swiper id="banner" indicator-dots="true"
+              autoplay="true" interval="3000" duration="500">
+          <swiper-item>
+            <view class="banner1 banner-item">
+              <image src="/images/banner1.png"></image>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class="banner2 banner-item">
+              <image src="/images/banner2.png"></image>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class="banner3 banner-item">
+              <image src="/images/banner3.png"></image>
+            </view>
+          </swiper-item>
+        </swiper>
+        <image src="/images/user-unlogin.png" id="left-top-button"></image>
+      </view>
+    </view>
+    <view class="page-section weui-panel">
+      <view class="ctrl-container weui-flex">
+        <view class="ctrl-tab weui-flex__item">
+          <block wx:for="{{sortingArr}}" wx:key="*this">
+            <text class="{{sortingIndex==index ? 'active': ''}}" 
+                  bindtap="switchSorting" data-val="{{index}}">{{item}}</text>
+          </block>
+        </view>
+
+        <picker class="weui-flex__item" mode="selector" bindchange="bindPickerChange" value="{{pickerIndex}}" range="{{pickerRange}}">
+          <view class="picker-val">
+            <text>{{pickerRange[pickerIndex]}}</text>
+            <image src="/images/switch-arrow.svg"></image>
+          </view>
+        </picker>
+      </view>
+
+      <view class="product-list">
+        <view class="product-item" wx:for="{{productNum}}" wx:key="*this">
+          <view class="visual">
+            <image src="/images/product-placeholder.jpg"></image>
+            <cover-view class="countdown">
+              <text class="label">距离下一次降价还剩：</text>
+              <text>03: 03: 00</text>
+            </cover-view>
+          </view>
+          <view class="info">
+            <view class="title">
+              <text>救衣侠定制T恤</text>
+            </view>
+            <view class="publish-info">
+              <text class="date">刚刚发布</text>
+              <text class="date">1km</text>
+            </view>
+            <view class="price">
+              <text class="cur">¥80.00</text>
+              <text class="del">¥120.00</text>
+            </view>
+            <view class="ana">
+              <image src="/images/eye.svg"></image>
+              <text>1000</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

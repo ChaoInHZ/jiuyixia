@@ -1,0 +1,150 @@
+#banner{
+  width: 100vw;
+  height: 400rpx;
+  background-color: #fff;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+.banner-item {
+   height: 400rpx;
+   width: 100%;
+   display: inline-block;
+}
+.banner-item image {
+  width: 100%;
+  height: 400rpx;
+}
+.top-banner-container {
+  position: relative;
+}
+#left-top-button {
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #fff;
+}
+.ctrl-container {
+  margin: 20rpx 20rpx;
+  border-bottom: 1rpx solid #bacac6;
+}
+.ctrl-tab {
+  padding: 20rpx 30rpx;
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+  flex: 3;
+  white-space: nowrap;
+}
+.ctrl-tab text {
+  margin-right: 35rpx;
+  padding: 26rpx 0;
+  font-size: 30rpx;
+}
+.ctrl-tab text.active {
+  border-bottom: 5rpx solid #f2be45;
+  color: #f2be45;
+}
+.picker-val {
+  margin-top: 14rpx;
+  padding: 6rpx 30rpx;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+}
+.picker-val text {
+  color: #f2be45;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-right: 16rpx;
+}
+.picker-val image{
+  color: #f2be45;
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 4rpx;
+}
+.product-item {
+  width: 50%;
+  padding: 0 20rpx;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 30rpx;
+}
+.product-item:nth-child(2n+1):after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.visual {
+  position: relative;
+  overflow: hidden;
+}
+.visual image {
+  max-width: 100%;
+  max-height: 380rpx;
+  margin: 0 auto;
+  display: block;
+  border-radius: 16rpx;
+}
+.countdown {
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 76rpx;
+  right: 0;
+  opacity: .7; 
+  padding: 10rpx 10rpx 5rpx;
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+}
+.countdown text {
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+.countdown text.label {
+  font-size: 28rpx;
+  margin-bottom: 5rpx;
+}
+.info {
+  padding: 20rpx;
+}
+.publish-info text {
+  margin-right: 20rpx;
+  font-size: 24rpx;
+  color: #bacac6;
+}
+.price {
+  margin-top: 30rpx;
+}
+.price .cur {
+  color: #f2be45;
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.price .del {
+  color: #bacac6;
+  font-size: 24rpx;
+  text-decoration: line-through;
+}
+.ana {
+  position: absolute;
+  right: 20rpx;
+  bottom: 22rpx;
+}
+.ana text {
+  color: #bacac6;
+  font-size: 24rpx;
+}
+.ana image {
+  width: 30rpx;
+  height: 26rpx;
+  position: relative;
+  top: 4rpx;
+}
