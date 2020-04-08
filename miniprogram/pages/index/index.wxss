@@ -120,7 +120,7 @@
   margin-bottom: 5rpx;
 }
 .info {
-  padding: 20rpx;
+  padding: 20rpx 20rpx 40rpx;
 }
 .publish-info text {
   margin-right: 20rpx;
@@ -128,7 +128,16 @@
   color: #bacac6;
 }
 .price {
-  margin-top: 30rpx;
+  clear: both;
+  margin-top: 20rpx;
+}
+.price .price-icon{
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  display: inline-block;
+  top: 6rpx;
+  margin-right: 10rpx;
 }
 .price .cur {
   color: #f2be45;
@@ -141,13 +150,13 @@
   text-decoration: line-through;
 }
 .ana {
-  position: absolute;
-  right: 20rpx;
-  bottom: 22rpx;
+  text-align: right;
+  float: right;
 }
 .ana text {
   color: #bacac6;
   font-size: 24rpx;
+  margin-right: 0;
 }
 .ana image {
   width: 30rpx;

@@ -4,7 +4,7 @@ const app = getApp()
 Page({
   data: {
     activeBanner: 'banner1',
-    pickerRange: ['24h自动降','捐赠','男装','女装','童装','鞋子','配饰'],
+    pickerRange: ['24h自动降','0元购买','男装','女装','童装','鞋子','配饰'],
     pickerIndex: 0,
     sortingArr: ['综合','距离','最新上架','价格'],
     sortingIndex: 0,

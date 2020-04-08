@@ -21,7 +21,7 @@
             </view>
           </swiper-item>
         </swiper>
-        <image src="/images/user-unlogin.png" id="left-top-button"></image>
+        <!-- image src="/images/user-unlogin.png" id="left-top-button"></image-->
       </view>
     </view>
     <view class="page-section weui-panel">
@@ -43,28 +43,34 @@
 
       <view class="product-list">
         <view class="product-item" wx:for="{{productNum}}" wx:key="*this">
-          <view class="visual">
-            <image src="/images/product-placeholder.jpg"></image>
-            <view class="countdown">
-              <text class="label">距离下一次降价还剩：</text>
-              <text>03: 03: 00</text>
+          <navigator url="/pages/pro-detail/pro-detail">
+            <view class="visual">
+              <image src="/images/product-placeholder.jpg"></image>
+              <view class="countdown">
+                <text class="label">距离下一次降价还剩：</text>
+                <text>03: 03: 00</text>
+              </view>
             </view>
-          </view>
+          </navigator>
           <view class="info">
-            <view class="title">
-              <text>救衣侠定制T恤</text>
-            </view>
+
+            <navigator url="/pages/pro-detail/pro-detail">
+              <view class="title">
+                <text>救衣侠定制T恤</text>
+              </view>
+            </navigator>
             <view class="publish-info">
               <text class="date">刚刚发布</text>
               <text class="date">1km</text>
-            </view>
-            <view class="price">
-              <text class="cur">¥80.00</text>
-              <text class="del">¥120.00</text>
-            </view>
             <view class="ana">
               <image src="/images/eye.svg"></image>
               <text>1000</text>
+            </view>
+            </view>
+            <view class="price">
+              <image class="price-icon" src="/images/price-fill.svg"></image>
+              <text class="cur">80.00</text>
+              <text class="del">¥120.00</text>
             </view>
           </view>
         </view>
@@ -76,21 +82,29 @@
 			<view class="weui-tab__panel">
 			</view>
 			<view class="weui-tabbar">
-				<view class="weui-tabbar__item weui-bar__item_on">
-					<image src="/images/shopping-active.svg" alt class="weui-tabbar__icon"></image>
-          <navigator class="weui-tabbar__label" url="">商城</navigator>
+				<view class="weui-tabbar__item weui-bar__item_on nav-homepage">
+        <navigator url="/pages/index/index">
+					<view class="icon-img">
+            <image src="/images/nav-home-active.svg"></image>
+            </view>
+          <text class="weui-tabbar__label">首页</text>
+        </navigator>
 				</view>
-				<view class="weui-tabbar__item">
-					<image src="/images/publish.svg"></image>
-					<view class="weui-tabbar__label">发布</view>
+				<view class="weui-tabbar__item nav-add">
+        <navigator url="/pages/sales-pre/sales-pre">
+					<view class="icon-img">
+            <text>+</text>
+          </view>
+          <text class="weui-tabbar__label">我要卖</text>
+        </navigator>
 				</view>
-				<view class="weui-tabbar__item">
-					<image src="/images/order.svg"></image>
-					<view class="weui-tabbar__label">订单</view>
-				</view>
-				<view class="weui-tabbar__item">
-					<image src="/images/person.svg"></image>
-					<view class="weui-tabbar__label">我的</view>
+				<view class="weui-tabbar__item nav-mine">
+        <navigator url="/pages/user-center/user-center">
+					<view class="icon-img">
+            <image src="/images/nav-user.svg"></image>
+          </view>
+					<text class="weui-tabbar__label">我的</text>
+        </navigator>
 				</view>
 			</view>
 		</view>

@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="page-body">
+    	<view class="weui-grids list-container weui-flex">
+        <navigator url="/pages/sale/sale?type=sale" class="weui-grid list-item weui-flex__item">
+          <view class="weui-grid__icon">
+            <image src="/images/sale.svg" alt style="width: 100rpx; height: 100rpx;top: 24rpx;"></image>
+          </view>
+          <view class="weui-grid__label">卖</view>
+        </navigator>
+        <navigator url="/pages/sale/sale?type=donate" class="weui-grid list-item weui-flex__item">
+          <view class="weui-grid__icon">
+            <image src="/images/donate.svg" alt></image>
+          </view>
+          <view class="weui-grid__label">捐</view>
+        </navigator>
+      </view>
+
+		<view class="weui-tab bottom-nav-bar">
+			<view class="weui-tab__panel">
+			</view>
+			<view class="weui-tabbar">
+				<view class="weui-tabbar__item nav-homepage">
+        <navigator url="/pages/index/index">
+					<view class="icon-img">
+            <image src="/images/nav-home.svg"></image>
+            </view>
+          <text class="weui-tabbar__label">首页</text>
+        </navigator>
+				</view>
+				<view class="weui-tabbar__item nav-add">
+        <navigator url="/pages/sales-pre/sales-pre">
+					<view class="icon-img">
+            <text>+</text>
+          </view>
+          <text class="weui-tabbar__label">我要卖</text>
+        </navigator>
+				</view>
+				<view class="weui-tabbar__item nav-mine">
+        <navigator url="/pages/user-center/user-center">
+					<view class="icon-img">
+            <image src="/images/nav-user.svg"></image>
+          </view>
+					<text class="weui-tabbar__label">我的</text>
+        </navigator>
+				</view>
+			</view>
+		</view>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#ffffff" id="canvas_background" height="102" width="102" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_18">
+   <g stroke="null" transform="matrix(0.214495 0 0 0.214495 10.3824 12.4683)" id="svg_9">
+    <g stroke="null" id="svg_10">
+     <defs stroke="null" transform="translate(0 4.76964) translate(0 -4.76964) translate(-4.76964 0) translate(-4.76964 0) translate(-4.76964 0) translate(0 -4.76964) translate(0 -4.76964) translate(0 -4.76964) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-14.4 0) translate(-3902.4 -2635.2) translate(3216.76 0) translate(0 2339.38)">
+      <rect stroke="null" height="621.8" width="620.9" y="230" x="649" id="svg_7"/>
+     </defs>
+     <clipPath stroke="null" transform="translate(0 4.76964) translate(0 -4.76964) translate(-4.76964 0) translate(-4.76964 0) translate(-4.76964 0) translate(0 -4.76964) translate(0 -4.76964) translate(0 -4.76964) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(0 -6.01885) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-6.01885 0) translate(-14.4 0) translate(-3902.4 -2635.2) translate(3216.76 0) translate(0 2339.38)" id="svg_6">
+      <use stroke="null" x="-774.535364" y="-370.316285" id="svg_11" xlink:href="#svg_7"/>
+     </clipPath>
+     <path stroke="null" id="svg_12" clip-path="url(#svg_6)" fill="#FFD96B" d="m-125.535362,170.283493c0,171.400192 138.899911,310.200241 310.199867,310.200241c171.399948,0 310.200272,-139 310.200272,-310.200241c0,-171.299725 -138.900421,-310.199875 -310.200272,-310.199875c-171.299712,-0.099854 -310.199867,138.800056 -310.199867,310.199875l0,0zm0,0"/>
+     <path stroke="null" id="svg_13" clip-path="url(#svg_6)" fill="#FDC223" d="m404.164551,-49.016232l-438.699909,438.800014c121.199902,120.999939 317.499714,120.999939 438.599812,-0.100098c121.100037,-121.199951 121.200134,-317.499992 0.100098,-438.699917l0,0zm0,0"/>
+    </g>
+    <path stroke="null" id="svg_14" fill="#F9AB10" d="m-40.835407,170.283493c0,124.600143 100.999985,225.50029 225.499912,225.600143c124.600143,0 225.500046,-101 225.600143,-225.500046l0,-0.100098c0,-124.599766 -101,-225.49968 -225.500046,-225.599773c-124.499928,-0.100098 -225.60001,101.000008 -225.60001,225.599773c0,-0.099854 0,-0.099854 0,0l0,0zm0,0"/>
+    <path stroke="null" id="svg_15" fill="#F9B721" d="m339.364746,6.383676c-88.300323,-83.399919 -227.500038,-82.199967 -314.100048,4.400146c-86.500011,86.599792 -87.800056,225.799965 -4.399902,314.099815c0,0 318.49995,-318.499961 318.49995,-318.499961l0,0zm0,0"/>
+    <path stroke="null" id="svg_16" fill="#D3830D" d="m165.3647,233.983688l-55.499992,0l0,-33.100098l55.499992,0l0,-17.899902l-55.499992,0l0,-33.100098l38.999992,0l-46.600082,-94.499916l46.100082,0l29.899902,63.799965c3.799805,8 6.5,15 8.100098,21.100098c1.799805,-6.600098 4.599609,-13.700195 8.100098,-21.100098l30.599609,-63.799965l46.100143,0l-47.100143,94.499916l39.700241,0l0,33.100098l-56.29985,0l0,17.899902l56.29985,0l0,33.100098l-56.29985,0l0,70.099899l-42,0l0,-70.099899l-0.100098,0zm0,0"/>
+    <path stroke="null" id="svg_17" fill="#BF790A" d="m226.664505,144.383591l-89.600098,89.600098l28.200195,0l0,70.099899l42.100098,0l0,-70.099899l56.29985,0l0,-33.100098l-56.29985,0l0,-17.899902l56.29985,0l0,-33.100098l-39.700241,0l2.700195,-5.5zm0,0"/>
+   </g>
+  </g>
+ </g>
+</svg>

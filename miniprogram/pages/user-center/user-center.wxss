@@ -1,0 +1,91 @@
+/* miniprogram/pages/user-center/user-center.wxss */
+.page-section {
+  margin: 0 20rpx 20rpx;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+}
+.name-card {
+  padding: 50rpx 20rpx 30rpx;
+  min-height: 240rpx;
+  background-color: #f2be45;
+  position: relative;
+}
+.user-img {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 auto 20rpx;
+  border-radius: 50%;
+  border: 6rpx solid #fff;
+  box-shadow: 0 0 20rpx #f4f4f4;
+  position: relative;
+}
+.user-img .level {
+  background-color: #cb163c;
+  color: #fff;
+  position: absolute;
+  right: -50rpx;
+  bottom: -20rpx;
+  border-radius: 20rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+}
+.user-img .level text {
+  font-size: 24rpx;
+  color: #fff;
+}
+.user-name {
+  width: 100%;
+  text-align: center;
+  padding: 16rpx 40rpx;
+  box-sizing: border-box;
+}
+.user-name text {
+  color: #fff;
+}
+.check-in {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f2be45;
+}
+.check-in:after {
+    width: 0;
+    height: 0;
+    display: block;
+    content: " ";
+    border-top: 60px solid #fff;
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #fff;
+    position: absolute;
+    left: -14rpx;
+    top: -38rpx;
+    rotate: 16deg;
+}
+.check-in navigator {
+  z-index: 2;
+  position: relative; 
+  padding: 10rpx;
+}
+.check-in text {
+  color: #f2be45;
+}
+.check-in image {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  top: 12rpx;  
+}
+.go-to-edit {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  position: absolute;
+  right: 20rpx;
+  top: calc(50% - 20rpx);
+}
+.go-to-edit navigator {
+  width: 40rpx;
+  height: 40rpx;
+}

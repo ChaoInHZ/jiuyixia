@@ -1,0 +1,35 @@
+/* miniprogram/pages/sales-pre.wxss */
+page {
+  height: 100vh;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.list-container {
+  margin-top: 46%;
+}
+.list-item:after {
+  border: none;
+}
+.list-container:before,
+.list-item:before {
+  content: none;
+}
+.weui-grid__icon {
+  width: 140rpx;
+  height: 140rpx;
+  padding: 40rpx;
+  border-radius: 50%;
+  background-color: #f2be45;
+}
+.list-item image {
+  width: 140rpx;
+  height: 140rpx;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+.weui-grid__label {
+  font-size: 40rpx;
+  color: #f5982f;
+  padding-top: 40rpx;
+}

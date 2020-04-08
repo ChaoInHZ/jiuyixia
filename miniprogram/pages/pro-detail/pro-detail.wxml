@@ -1,0 +1,116 @@
+<view class="container">
+  <view class="page-body">
+  
+    <view class="user-info-panel">
+      <view class="user-image">
+        <image src="/images/user-unlogin.png"></image>
+      </view>
+      <view class="user-gen-info">
+        <view class="user-name">User Name</view>
+        <view class="publish-time">
+          <text>刚刚发布</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="product-image">
+      <swiper id="product-image-swiper" indicator-dots="true"
+            autoplay="true" interval="3000" duration="500">
+        <swiper-item>
+          <view>
+            <image mode="aspectFit" src="/images/product-placeholder.jpg"></image>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view>
+            <image mode="aspectFit" src="/images/product-placeholder.jpg"></image>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view>
+            <image mode="aspectFit" src="/images/product-placeholder.jpg"></image>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+
+    <view class="product-info-panel">
+
+      <view class="product-title">
+        <text>救衣侠定制T恤</text>
+      </view>
+
+      <view class="product-price">
+        <view class="price-detail">
+          <image class="price-icon" src="/images/price-fill.svg"></image>
+          <text class="cur-price">99.00</text>
+          <text class="ori-price">199.00</text>
+        </view>
+        <view class="price-note">
+          <text>距下一次降价还剩</text>
+          <text>03:10:00</text>
+        </view>
+      </view>
+      <view class="product-tags">
+        <view class="product-tag-item">160-165cm / M</view>
+        <view class="product-tag-item">女</view>
+      </view>
+
+
+      <view class="product-details">
+        <text>Duis sollicitudin hendrerit magna eu dictum. In at sapien vel nunc maximus dictum. Pellentesque orci quam, volutpat vitae placerat vel, bibendum non tellus. Donec turpis ipsum, porta in nulla ac, scelerisque pretium nulla. Nunc in arcu a lectus tincidunt fringilla vel malesuada felis. Nulla pellentesque vestibulum lorem, ut pretium tortor. Curabitur dictum dolor ut ex ullamcorper, nec luctus dui tristique. Pellentesque congue nibh sed diam tincidunt feugiat at id nunc. Etiam vitae lorem aliquet, mollis ante eu, eleifend risus. 
+        </text>
+      </view>
+    </view>
+
+    <view class="recommend-panel">
+      <view class="section-label">猜你喜欢</view>
+      <view class="product-list">
+        <view class="product-item" wx:for="{{productNum}}" wx:key="*this">
+          <view class="visual">
+            <image src="/images/product-placeholder.jpg"></image>
+            <view class="countdown">
+              <text class="label">距离下一次降价还剩：</text>
+              <text>03: 03: 00</text>
+            </view>
+          </view>
+          <view class="info">
+            <view class="title">
+              <text>救衣侠定制T恤</text>
+            </view>
+            <view class="publish-info">
+              <text class="date">刚刚发布</text>
+              <text class="date">1km</text>
+            <view class="ana">
+              <image src="/images/eye.svg"></image>
+              <text>1000</text>
+            </view>
+            </view>
+            <view class="price">
+              <image class="price-icon" src="/images/price-fill.svg"></image>
+              <text class="cur">80.00</text>
+              <text class="del">¥120.00</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+		<view class="weui-tab bottom-nav-bar">
+			<view class="weui-tab__panel">
+			</view>
+			<view class="weui-tabbar">
+          <view class="favor icon-item">
+            <image mode="aspectFit" src="/images/heart-fill.svg"></image>
+          </view>
+          <view class="contact icon-item">
+            <image mode="aspectFit" src="/images/contact.svg"></image>
+          </view>
+          <view class="call-to-action">
+            <button>我想要</button>
+          </view>
+			</view>
+		</view>
+
+  </view>
+</view>

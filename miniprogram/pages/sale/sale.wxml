@@ -1,0 +1,138 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-header">
+      <navigator url="/pages/index/index">
+        <view class="back-to-home">
+          <image src="/images/home-white.svg"></image>
+        </view>
+      </navigator>
+      <text>发布信息</text>
+    </view>
+    <view class="weui-cells__group weui-cells__group_form">
+      <view class="weui-cells weui-cells_form">
+        <view class="weui-cell weui-cell_active">
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="商品标题" placeholder-class="weui-input__placeholder" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="商品描述" placeholder-class="weui-input__placeholder" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_active no-separator">
+          <view class="weui-cell__hd">							
+            <view class="weui-uploader">
+              <view class="weui-uploader__bd weui-uploader__files" id="uploaderFiles">
+                <block wx:for="{{files}}" wx:key="*this">
+                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                    </view>
+                </block>
+                <view class="weui-uploader__input-box" wx:if="{{files.length < 9}}">
+                    <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                </view>
+              </view>
+            </view>
+
+
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells weui-cells_form">
+        <view class="weui-flex" wx:if="{{publishType == 'sale'}}">
+          <view class="weui-cell weui-cell_active weui-flex__item">
+            <view class="weui-cell__hd">						
+              <image class="price-icon" src="/images/price-fill.svg"></image>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="现价" type="number" placeholder-class="weui-input__placeholder" bindblur="priceFormat" value="{{price}}"/>
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_active weui-flex__item no-separator">
+            <view class="weui-cell__hd">						
+              <image class="price-icon" src="/images/price-fill-grey.svg"></image>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input line-through-text" placeholder="原价" value="{{oriPrice}}" type="number" placeholder-class="weui-input__placeholder" bindblur="oriPriceFormat"/>
+            </view>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+          <view class="weui-cell__hd">							
+            <label class="weui-label">邮费</label>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="0.00" type="number" placeholder-class="weui-input__placeholder" value="{{expressFee}}" bindblur="expressFeeFormat"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+          <view class="weui-cell__hd">							
+            <label class="weui-label">地址</label>
+          </view>
+          <view class="weui-cell__bd">
+            <navigator url="/pages/map/map">
+              <view class="go-to">
+                <image src="/images/arrow-right-black.svg"></image>
+              </view>
+            </navigator>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+          <view class="weui-cell__hd">							
+            <label class="weui-label">身高/尺寸</label>
+          </view>
+          <view class="weui-cell__bd">
+            <picker mode="multiSelector" bindchange="bindSizePickerChange" value="{{sizeIndex}}" range="{{sizeArr}}">
+              <view class="picker" wx:if="{{sizeIndex[0] >= 0}}">
+                {{sizeArr[0][sizeIndex[0]]}}  {{sizeArr[1][sizeIndex[1]]}}
+              </view>
+              <view class="picker placeholder" wx:if="{{sizeIndex[0] == -1}}">
+                请选择
+              </view>
+            </picker>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+          <view class="weui-cell__hd">							
+            <label class="weui-label">性别</label>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindSexPickerChange" value="{{sexIndex}}" range="{{sexArr}}">
+              <view class="picker" wx:if="{{sexIndex > 0}}">
+                {{sexArr[sexIndex]}}
+              </view>
+              <view class="picker placeholder" wx:if="{{sexIndex == 0}}">
+                请选择
+              </view>
+            </picker>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_active" wx:if="{{publishType == 'sale'}}">
+          <view class="weui-cell__bd">							
+            <label>24小时自动降价</label>
+          </view>
+          <view class="weui-cell__hd">
+            <switch checked="{{autoCut}}" bindchange="onAutoCutChange"/>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_active agreement-section">
+          <view class="weui-cell__bd" bindtap="onAgreeCheckedChange">	
+            <view class="switch-btn {{agreeChecked ? 'checked': ''}}"></view>
+            <view class="switch-btn-label">同意接受《救衣侠服务协议》并确认是可支配、合法物品</view>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_active btn-section">
+          <view class="weui-cell__bd">	
+            <button type="primary" loading="{{loading}}" bindtap="submitPublish">
+              发布
+            </button>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+</view>
