@@ -15,6 +15,7 @@
         <view class="note">立即前往 <navigator url="/pages/index/index"><text class="link">购买</text></navigator></view>
       </view>
       <block wx:for="{{productsOnBuy}}" wx:key="*this">
+        <navigator url="/pages/order-detail/order-detail">
         <view class="page-section weui-panel order-detail">
           <view class="img">
             <image src="{{item.img}}" mode="aspectFit"></image>
@@ -34,6 +35,7 @@
               {{item.status}}</view>
           </view>
         </view>
+          </navigator>
       </block>
     </view>
 

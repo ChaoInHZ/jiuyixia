@@ -12,7 +12,16 @@ Page({
   },
 
   onLoad: function() {
-
+    // wx.request({
+    //   url: app.globalData.serverUrl + '/api/home.rpc',
+    //   data: {
+    //   },
+    //   header: {
+    //   },
+    //   success (res) {
+        
+    //   }
+    // })
   },
   onShareAppMessage: function () {
 
