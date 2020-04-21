@@ -1,0 +1,70 @@
+<view class="container">
+  <view class="page-body">
+
+    <view class="page-section weui-panel">
+      <view class="tab-panel">
+        <view class="tab-item {{activeTab == 'onBuy' ? 'active' : ''}}" bindtap="swtichTab" data-tab-name="onBuy">我买的</view>
+        <view class="tab-item {{activeTab == 'onSale' ? 'active' : ''}}" bindtap="swtichTab" data-tab-name="onSale">我卖的</view>   
+      </view>
+    </view>
+
+    <view class="tab-content onBuy {{activeTab == 'onBuy' ? 'active' : ''}}">
+      <view wx:if="{{productsOnBuy.length == 0}}" class="page-section weui-panel no-result-panel">
+        <image src="/images/empty-box.svg"></image>　
+        <view class="note">暂无记录! </view>
+        <view class="note">立即前往 <navigator url="/pages/index/index"><text class="link">购买</text></navigator></view>
+      </view>
+      <block wx:for="{{productsOnBuy}}" wx:key="*this">
+        <view class="page-section weui-panel order-detail">
+          <view class="img">
+            <image src="{{item.img}}" mode="aspectFit"></image>
+          </view>
+          <view class="info">
+            <view class="name">{{item.name}}</view>
+            <view class="price">
+              <text class="price">{{item.price}}</text>
+              <text class="ori-price">{{item.oriPrice}}</text>
+            </view>
+            <view class="status orange" wx:if="{{item.status == '待发货' || item.status == '已发货' || item.status == '待支付'}}">{{item.status}}</view>
+            <view class="status green" wx:if="{{item.status == '交易成功'}}">
+              <image src="/images/success.svg"></image>
+            {{item.status}}</view>
+            <view class="status" wx:if="{{item.status == '交易结束'}}">
+              <image src="/images/cancel.svg"></image>
+              {{item.status}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+
+    <view class="tab-content onSale {{activeTab == 'onSale' ? 'active' : ''}}">
+      <view wx:if="{{productsOnSale.length == 0}}" class="page-section weui-panel no-result-panel">
+        <image src="/images/empty-box.svg"></image>　
+        <view class="note">暂无记录! </view>
+        <view class="note">立即前往 <navigator url="/pages/index/index"><text class="link">购买</text></navigator></view>
+      </view>
+      <block wx:for="{{productsOnSale}}" wx:key="*this">
+        <view class="page-section weui-panel order-detail">
+          <view class="img">
+            <image src="{{item.img}}" mode="aspectFit"></image>
+          </view>
+          <view class="info">
+            <view class="name">{{item.name}}</view>
+            <view class="price">
+              <text class="price">{{item.price}}</text>
+              <text class="ori-price">{{item.oriPrice}}</text>
+            </view>
+            <view class="status orange" wx:if="{{item.status == '待发货' || item.status == '已发货' || item.status == '待支付'}}">{{item.status}}</view>
+            <view class="status green" wx:if="{{item.status == '交易成功'}}">
+              <image src="/images/success.svg"></image>
+            {{item.status}}</view>
+            <view class="status" wx:if="{{item.status == '交易结束'}}">
+              <image src="/images/cancel.svg"></image>
+              {{item.status}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+
+  </view>
+</view>

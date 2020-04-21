@@ -25,11 +25,11 @@
     </view>
     <view class="page-section weui-panel order-panel">
       <view class="weui-cells weui-cells_after-title">
-          <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <navigator url="/pages/order-list/order-list" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
               <view class="weui-cell__bd"><text>我的订单</text></view>
               <view class="weui-cell__ft weui-cell__ft_in-access"></view>
           </navigator>
-          <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <navigator url="/pages/favor/favor" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
               <view class="weui-cell__bd"><text>我的收藏</text></view>
               <view class="weui-cell__ft weui-cell__ft_in-access"></view>
           </navigator>
@@ -54,9 +54,9 @@
               <view class="weui-cell__bd"><text>预约回收</text></view>
               <view class="weui-cell__ft weui-cell__ft_in-access"></view>
           </navigator>
-          <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <navigator bindtap="dialOut" data-tel="13000000000" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
               <view class="weui-cell__bd"><text>客服热线</text></view>
-              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+              <view class="weui-cell__ft weui-cell__ft_in-access">13000000000</view>
           </navigator>
       </view>
     </view>

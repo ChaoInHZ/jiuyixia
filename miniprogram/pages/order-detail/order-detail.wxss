@@ -1,0 +1,65 @@
+.tab-panel {
+  width: 100%;
+  margin-bottom: 30rpx;
+  border-bottom: 1rpx solid #bacac6;
+  display: flex;
+  box-sizing: border-box;
+}
+.tab-item {
+  width: 50%;
+  padding: 24rpx 24rpx 20rpx;
+  text-align: center;
+  color: #9c9c9c;
+}
+.tab-item.active {
+  color: #f2be45;
+  border-bottom: 4rpx solid #f2be45;
+  margin-bottom: -2rpx;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.weui-panel:before,
+.weui-panel:after {
+  content: "";
+  display: none;
+  border: none;
+}
+.pro-content {
+  display: flex;
+  padding: 40rpx 20rpx;
+}
+.pro-content .name {
+  margin-bottom: 10rpx;
+}
+.pro-content .img {
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 50rpx;
+}
+.pro-content .price {
+  color: #f2be45;
+  margin-right: 20rpx;
+}
+.pro-content .ori-price {
+  color: #bacac6;
+  text-decoration: line-through;
+  font-size: smaller;
+}
+
+.btn-section:before {
+  border: none;
+}
+.go-to {
+  height: 48rpx;
+}
+.go-to image{
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+  position: relative;
+  top: 10rpx;
+}

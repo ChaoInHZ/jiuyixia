@@ -1,11 +1,12 @@
-// miniprogram/pages/user-center/user-center.js
+// miniprogram/pages/order-detail/order-detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    activeTab: 'pendingPay',
+    pro: {name: "救衣侠定制T恤", img: "/images/product-placeholder.jpg", price: "85.00", oriPrice: "275.00", expressFee: '10.00'}
   },
 
   /**
@@ -63,9 +64,10 @@ Page({
   onShareAppMessage: function () {
 
   },
-  dialOut: function(e){
-    wx.makePhoneCall({
-      phoneNumber: e.currentTarget.dataset.tel
+  swtichTab: function(e){
+    var tabName = e.target.dataset.tabName;
+    this.setData({
+      activeTab: tabName
     })
   }
 })

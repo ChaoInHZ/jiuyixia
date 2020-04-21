@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/order-detail/order-detail",
+    "pages/favor/favor",
+    "pages/order-list/order-list",
     "pages/user-center/user-center",
     "pages/pro-detail/pro-detail",
     "pages/map/map",

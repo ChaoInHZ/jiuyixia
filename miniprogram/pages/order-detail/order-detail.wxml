@@ -1,0 +1,92 @@
+<view class="container">
+  <view class="page-body">
+
+    <view class="page-header">
+      <text>订单信息</text>
+    </view>
+    <!--view class="page-section weui-panel">
+      <view class="tab-panel">
+        <view class="tab-item {{activeTab == 'pendingPay' ? 'active' : ''}}" bindtap="swtichTab" data-tab-name="pendingPay">待付款</view>
+        <view class="tab-item {{activeTab == 'pendingDelivery' ? 'active' : ''}}" bindtap="swtichTab" data-tab-name="pendingDelivery">待发货</view>  
+        <view class="tab-item {{activeTab == 'pendingSign' ? 'active' : ''}}" bindtap="swtichTab" data-tab-name="pendingSign">待收货</view>  
+        <view class="tab-item {{activeTab == 'done' ? 'active' : ''}}" bindtap="swtichTab" data-tab-name="done">已收货</view>   
+      </view>
+    </view-->
+
+    <!--view class="tab-content pendingPay {{activeTab == 'pendingPay' ? 'active' : ''}}"-->
+    <view>
+      <view class="page-section weui-panel">
+        <view class="pro-content">
+          <view class="img">
+            <image src="{{pro.img}}" mode="aspectFit"></image>
+          </view>
+          <view class="info">
+            <view class="name">{{pro.name}}</view>
+            <view class="price">
+              <text class="price">{{pro.price}}</text>
+              <text class="ori-price">{{pro.oriPrice}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+
+      <view class="weui-cells weui-cells_form">
+        <view class="weui-cell weui-cell_active">
+          <view class="weui-cell__hd">							
+            <label class="weui-label">收获地址</label>
+          </view>
+          <view class="weui-cell__bd">
+            <navigator url="/pages/map/map">
+              <view class="go-to">
+                <image src="/images/arrow-right-black.svg"></image>
+              </view>
+            </navigator>
+          </view>
+        </view>
+
+        <view class="weui-cell weui-cell_active">
+          <view class="weui-cell__hd">							
+            <label class="weui-label">邮费</label>
+          </view>
+          <view class="weui-cell__bd">
+            <text>{{expressFee}}</text>
+          </view>
+        </view>
+
+      </view>
+
+    </view>
+
+		<view class="weui-tab bottom-nav-bar">
+			<view class="weui-tab__panel">
+			</view>
+			<view class="weui-tabbar">
+				<view class="weui-tabbar__item weui-bar__item_on nav-homepage">
+        <navigator url="/pages/index/index">
+					<view class="icon-img">
+            <image src="/images/nav-home-active.svg"></image>
+            </view>
+          <text class="weui-tabbar__label">首页</text>
+        </navigator>
+				</view>
+				<view class="weui-tabbar__item nav-add">
+        <navigator url="/pages/sales-pre/sales-pre">
+					<view class="icon-img">
+            <text>+</text>
+          </view>
+          <text class="weui-tabbar__label">我要卖</text>
+        </navigator>
+				</view>
+				<view class="weui-tabbar__item nav-mine">
+        <navigator url="/pages/user-center/user-center">
+					<view class="icon-img">
+            <image src="/images/nav-user.svg"></image>
+          </view>
+					<text class="weui-tabbar__label">我的</text>
+        </navigator>
+				</view>
+			</view>
+		</view>
+  </view>
+</view>
