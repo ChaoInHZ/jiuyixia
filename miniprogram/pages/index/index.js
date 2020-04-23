@@ -1,5 +1,6 @@
 //index.js
 const app = getApp()
+const http = require('../../js/http.js');
 
 Page({
   data: {
@@ -22,6 +23,11 @@ Page({
         
     //   }
     // })
+    http.post('/api/area/getArea.rpc', {}, function(res) {
+      console.log(res);
+    });
+
+
   },
   onShareAppMessage: function () {
 

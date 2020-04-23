@@ -78,11 +78,15 @@ App({
     
     this.globalData = {
       userInfo: {
+        sid: "",
         uuid: "",
         openId: "",
         telephone: ""
       },
-      serverUrl: "https://api.jiuyixia.tanlingling.com"
+      serverUrl: "https://api.jiuyixia.tanlingling.com",
+      version: "1.0.0",
+      os: "mini",
+      key: "4fca7e6604334d218f546705646d8356"
     }
   }
 })
